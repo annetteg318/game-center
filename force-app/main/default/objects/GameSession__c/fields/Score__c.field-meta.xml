@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Score__c</fullName>
+    <description>This formula is checking if the difficulty level of the game is easy, medium, or hard. According to the difficulty level the duration of each game session is multiplied by either 10, 20, or 30 in order to calculate a core.</description>
+    <externalId>false</externalId>
+    <formula>CASE( Game__r.Difficulty_Level__c, &quot;Easy&quot;, Duration__c * 10, &quot;Medium&quot;, Duration__c * 20, &quot;Hard&quot;, Duration__c * 30, Duration__c * 1)</formula>
+    <inlineHelpText>Score calculated through duration and game difficulty.</inlineHelpText>
+    <label>Score</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

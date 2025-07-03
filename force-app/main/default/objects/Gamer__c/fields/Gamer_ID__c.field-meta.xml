@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Gamer_ID__c</fullName>
+    <description>The unique identifier assigned to each gamer.</description>
+    <displayFormat>GAMER-{0000}</displayFormat>
+    <externalId>false</externalId>
+    <inlineHelpText>The unique identifier assigned to each gamer.</inlineHelpText>
+    <label>Gamer ID</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>AutoNumber</type>
+</CustomField>

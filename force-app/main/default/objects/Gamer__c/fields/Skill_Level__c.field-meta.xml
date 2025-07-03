@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Skill_Level__c</fullName>
+    <description>Categorize gamers by experience.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>The skill level that identifies this gamer.</inlineHelpText>
+    <label>Skill Level</label>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Beginner</fullName>
+                <default>false</default>
+                <label>Beginner</label>
+            </value>
+            <value>
+                <fullName>Intermediate</fullName>
+                <default>false</default>
+                <label>Intermediate</label>
+            </value>
+            <value>
+                <fullName>Advanced</fullName>
+                <default>false</default>
+                <label>Advanced</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

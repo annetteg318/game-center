@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Required_Game_Field</fullName>
+    <active>true</active>
+    <description>Validating if there is something in the game field before saving. If not then an error message is displayed.</description>
+    <errorConditionFormula>ISBLANK(Game__c)</errorConditionFormula>
+    <errorDisplayField>Game__c</errorDisplayField>
+    <errorMessage>There must be a value in the Game field before saving the session.</errorMessage>
+</ValidationRule>

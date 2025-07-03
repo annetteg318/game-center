@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Gamer__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>Connects the session to a specific player</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Connects the session to a specific player</inlineHelpText>
+    <label>Gamer</label>
+    <referenceTo>Gamer__c</referenceTo>
+    <relationshipLabel>GameSessions</relationshipLabel>
+    <relationshipName>GameSessions</relationshipName>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

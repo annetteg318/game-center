@@ -1,0 +1,28 @@
+<template>
+    <lightning-card title="Top 5 Gamers">
+        <template if:true={gamers}>
+                <ul class="slds-list_dotted slds-var-m-around_medium">
+                    <template for:each={gamers} for:item="gamer">
+                        <li key={gamer.Id} class="slds-var-p-around_small slds-box slds-var-m-bottom_small">
+                            <div class="slds-grid slds-grid_align-spread slds-grid_vertical-align-center">
+                                <div> 
+                                    <strong>{gamer.rankIcon}</strong> {gamer.Gamer__r.Name}
+                                </div>
+                                <div class="slds-text-color_success">
+                                    Score: <strong>{gamer.Score__c}</strong>
+                                </div>
+                            </div> 
+                        </li>
+                    </template>
+                </ul>
+        </template>
+
+        <template if:true={error}>
+            <p class="slds-text-color_error slds-var-p-around_medium">Error: {error}</p>
+        </template>
+
+        <template if:false={gamers}>
+            <p class="slds-var-p-around_medium">Loading gamers...</p>
+        </template>
+    </lightning-card>
+  </template>

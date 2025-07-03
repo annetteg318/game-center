@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Require_Gamer_If_Validated</fullName>
+    <active>true</active>
+    <description>if the GamerValidation field is checked then an error message should be thrown.</description>
+    <errorConditionFormula>GamerValidation__c = TRUE</errorConditionFormula>
+    <errorDisplayField>Gamer__c</errorDisplayField>
+    <errorMessage>There must be a value in the Gamer field before the session can be saved.</errorMessage>
+</ValidationRule>
